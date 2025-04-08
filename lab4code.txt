@@ -1,0 +1,3 @@
+future = data.frame(year=2010:2100, pop=approx(emit$year, pop$value, 2010:2100)$y,
+                    gdppc=approx(gdp$year, emit$gdppc, 2010:2100)$y,
+                    cigdp=approx(emit$year, emit$cigdp, 2010:2100)$y)
